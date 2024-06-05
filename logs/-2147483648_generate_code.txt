@@ -1,0 +1,8 @@
+2024-06-05T20:16:03.1275438Z ##[section]Starting: Prepare job generate_code
+2024-06-05T20:16:03.1426771Z Evaluating strategy
+2024-06-05T20:16:03.1435440Z Creating job '__default'
+2024-06-05T20:16:03.1441790Z Evaluating timeout
+2024-06-05T20:16:03.1441885Z Evaluating cancel timeout
+2024-06-05T20:16:03.1441929Z Evaluating continue on error
+2024-06-05T20:16:03.1441978Z Evaluating target
+2024-06-05T20:16:03.1444441Z ##[section]Finishing: Prepare job generate_code

@@ -1,0 +1,78 @@
+2024-06-05T20:16:09.5637154Z ##[group]Run actions/checkout@v2
+2024-06-05T20:16:09.5637900Z with:
+2024-06-05T20:16:09.5638405Z   repository: jordanblake-dev/automation-scripts
+2024-06-05T20:16:09.5639296Z   token: ***
+2024-06-05T20:16:09.5639714Z   ssh-strict: true
+2024-06-05T20:16:09.5640172Z   persist-credentials: true
+2024-06-05T20:16:09.5640725Z   clean: true
+2024-06-05T20:16:09.5641133Z   fetch-depth: 1
+2024-06-05T20:16:09.5641551Z   lfs: false
+2024-06-05T20:16:09.5642543Z   submodules: false
+2024-06-05T20:16:09.5643024Z   set-safe-directory: true
+2024-06-05T20:16:09.5643582Z ##[endgroup]
+2024-06-05T20:16:11.4941366Z Syncing repository: jordanblake-dev/automation-scripts
+2024-06-05T20:16:11.4999698Z ##[group]Getting Git version info
+2024-06-05T20:16:11.5001297Z Working directory is '/home/runner/work/automation-scripts/automation-scripts'
+2024-06-05T20:16:11.5033908Z [command]/usr/bin/git version
+2024-06-05T20:16:11.5226803Z git version 2.45.1
+2024-06-05T20:16:11.5251258Z ##[endgroup]
+2024-06-05T20:16:11.5272397Z Temporarily overriding HOME='/home/runner/work/_temp/9732b7f6-4103-435e-a228-880de53e0c24' before making global git config changes
+2024-06-05T20:16:11.5274732Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-05T20:16:11.5277022Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/automation-scripts/automation-scripts
+2024-06-05T20:16:11.5322723Z Deleting the contents of '/home/runner/work/automation-scripts/automation-scripts'
+2024-06-05T20:16:11.5327633Z ##[group]Initializing the repository
+2024-06-05T20:16:11.5332165Z [command]/usr/bin/git init /home/runner/work/automation-scripts/automation-scripts
+2024-06-05T20:16:11.5420753Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-06-05T20:16:11.5421698Z hint: is subject to change. To configure the initial branch name to use in all
+2024-06-05T20:16:11.5422624Z hint: of your new repositories, which will suppress this warning, call:
+2024-06-05T20:16:11.5423202Z hint:
+2024-06-05T20:16:11.5423784Z hint: 	git config --global init.defaultBranch <name>
+2024-06-05T20:16:11.5424305Z hint:
+2024-06-05T20:16:11.5424848Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-06-05T20:16:11.5425707Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-06-05T20:16:11.5426288Z hint:
+2024-06-05T20:16:11.5426683Z hint: 	git branch -m <name>
+2024-06-05T20:16:11.5431521Z Initialized empty Git repository in /home/runner/work/automation-scripts/automation-scripts/.git/
+2024-06-05T20:16:11.5439468Z [command]/usr/bin/git remote add origin https://github.com/jordanblake-dev/automation-scripts
+2024-06-05T20:16:11.5485455Z ##[endgroup]
+2024-06-05T20:16:11.5486322Z ##[group]Disabling automatic garbage collection
+2024-06-05T20:16:11.5489528Z [command]/usr/bin/git config --local gc.auto 0
+2024-06-05T20:16:11.5527071Z ##[endgroup]
+2024-06-05T20:16:11.5528168Z ##[group]Setting up auth
+2024-06-05T20:16:11.5533689Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-05T20:16:11.5571857Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-05T20:16:11.5912060Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-05T20:16:11.5949465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-05T20:16:11.6195484Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-06-05T20:16:11.6240145Z ##[endgroup]
+2024-06-05T20:16:11.6241338Z ##[group]Fetching the repository
+2024-06-05T20:16:11.6250576Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +baf7b2ce157d95afc4b34c39f17233104ae29978:refs/remotes/origin/main
+2024-06-05T20:16:11.8089735Z remote: Enumerating objects: 7, done.        
+2024-06-05T20:16:11.8092385Z remote: Counting objects:  14% (1/7)        
+2024-06-05T20:16:11.8093286Z remote: Counting objects:  28% (2/7)        
+2024-06-05T20:16:11.8094267Z remote: Counting objects:  42% (3/7)        
+2024-06-05T20:16:11.8095092Z remote: Counting objects:  57% (4/7)        
+2024-06-05T20:16:11.8095894Z remote: Counting objects:  71% (5/7)        
+2024-06-05T20:16:11.8096898Z remote: Counting objects:  85% (6/7)        
+2024-06-05T20:16:11.8097652Z remote: Counting objects: 100% (7/7)        
+2024-06-05T20:16:11.8098418Z remote: Counting objects: 100% (7/7), done.        
+2024-06-05T20:16:11.8099094Z remote: Compressing objects:  16% (1/6)        
+2024-06-05T20:16:11.8099657Z remote: Compressing objects:  33% (2/6)        
+2024-06-05T20:16:11.8100510Z remote: Compressing objects:  50% (3/6)        
+2024-06-05T20:16:11.8101114Z remote: Compressing objects:  66% (4/6)        
+2024-06-05T20:16:11.8101808Z remote: Compressing objects:  83% (5/6)        
+2024-06-05T20:16:11.8102503Z remote: Compressing objects: 100% (6/6)        
+2024-06-05T20:16:11.8103144Z remote: Compressing objects: 100% (6/6), done.        
+2024-06-05T20:16:11.8104335Z remote: Total 7 (delta 0), reused 4 (delta 0), pack-reused 0        
+2024-06-05T20:16:11.8172369Z From https://github.com/jordanblake-dev/automation-scripts
+2024-06-05T20:16:11.8173376Z  * [new ref]         baf7b2ce157d95afc4b34c39f17233104ae29978 -> origin/main
+2024-06-05T20:16:11.8206164Z ##[endgroup]
+2024-06-05T20:16:11.8206856Z ##[group]Determining the checkout info
+2024-06-05T20:16:11.8208493Z ##[endgroup]
+2024-06-05T20:16:11.8209236Z ##[group]Checking out the ref
+2024-06-05T20:16:11.8213279Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-06-05T20:16:11.8265772Z Switched to a new branch 'main'
+2024-06-05T20:16:11.8269596Z branch 'main' set up to track 'origin/main'.
+2024-06-05T20:16:11.8274224Z ##[endgroup]
+2024-06-05T20:16:11.8325575Z [command]/usr/bin/git log -1 --format='%H'
+2024-06-05T20:16:11.8359663Z 'baf7b2ce157d95afc4b34c39f17233104ae29978'

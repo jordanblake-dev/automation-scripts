@@ -1,0 +1,31 @@
+2024-06-05T20:16:21.1067502Z ##[group]Run python generate_and_push_code.py
+2024-06-05T20:16:21.1068206Z [36;1mpython generate_and_push_code.py[0m
+2024-06-05T20:16:21.1128488Z shell: /usr/bin/bash -e {0}
+2024-06-05T20:16:21.1129019Z env:
+2024-06-05T20:16:21.1129453Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-06-05T20:16:21.1130108Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
+2024-06-05T20:16:21.1131001Z   OPENAI_API_KEY: ***
+2024-06-05T20:16:21.1131581Z   MY_GITHUB_TOKEN: ***
+2024-06-05T20:16:21.1132079Z   BOT_EMAIL: ***
+2024-06-05T20:16:21.1132491Z   BOT_EMAIL_PASSWORD: ***
+2024-06-05T20:16:21.1132885Z ##[endgroup]
+2024-06-05T20:16:22.0303572Z Traceback (most recent call last):
+2024-06-05T20:16:22.0312929Z   File "/home/runner/work/automation-scripts/automation-scripts/generate_and_push_code.py", line 55, in <module>
+2024-06-05T20:16:22.0314575Z     generated_code = generate_code(code_prompt)
+2024-06-05T20:16:22.0315620Z                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-06-05T20:16:22.0317116Z   File "/home/runner/work/automation-scripts/automation-scripts/generate_and_push_code.py", line 44, in generate_code
+2024-06-05T20:16:22.0318688Z     response = openai.ChatCompletion.create(
+2024-06-05T20:16:22.0319382Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-06-05T20:16:22.0320851Z   File "/opt/hostedtoolcache/Python/3.12.3/x64/lib/python3.12/site-packages/openai/lib/_old_api.py", line 39, in __call__
+2024-06-05T20:16:22.0322471Z     raise APIRemovedInV1(symbol=self._symbol)
+2024-06-05T20:16:22.0323186Z openai.lib._old_api.APIRemovedInV1: 
+2024-06-05T20:16:22.0323751Z 
+2024-06-05T20:16:22.0325027Z You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+2024-06-05T20:16:22.0326323Z 
+2024-06-05T20:16:22.0326995Z You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+2024-06-05T20:16:22.0327829Z 
+2024-06-05T20:16:22.0328436Z Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+2024-06-05T20:16:22.0329401Z 
+2024-06-05T20:16:22.0330177Z A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+2024-06-05T20:16:22.0331052Z 
+2024-06-05T20:16:22.0942116Z ##[error]Process completed with exit code 1.
