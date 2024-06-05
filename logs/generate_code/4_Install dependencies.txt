@@ -1,105 +1,105 @@
-2024-06-05T20:16:12.0116934Z ##[group]Run pip install openai PyGithub
-2024-06-05T20:16:12.0117702Z [36;1mpip install openai PyGithub[0m
-2024-06-05T20:16:12.0198328Z shell: /usr/bin/bash -e {0}
-2024-06-05T20:16:12.0198739Z env:
-2024-06-05T20:16:12.0199189Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
-2024-06-05T20:16:12.0199924Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
-2024-06-05T20:16:12.0200479Z ##[endgroup]
-2024-06-05T20:16:15.4977868Z Collecting openai
-2024-06-05T20:16:15.5529165Z   Downloading openai-1.31.1-py3-none-any.whl.metadata (21 kB)
-2024-06-05T20:16:15.6116583Z Collecting PyGithub
-2024-06-05T20:16:15.6189401Z   Downloading PyGithub-2.3.0-py3-none-any.whl.metadata (3.8 kB)
-2024-06-05T20:16:15.6682959Z Collecting anyio<5,>=3.5.0 (from openai)
-2024-06-05T20:16:15.6755999Z   Downloading anyio-4.4.0-py3-none-any.whl.metadata (4.6 kB)
-2024-06-05T20:16:15.6992357Z Collecting distro<2,>=1.7.0 (from openai)
-2024-06-05T20:16:15.7062837Z   Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
-2024-06-05T20:16:15.7512520Z Collecting httpx<1,>=0.23.0 (from openai)
-2024-06-05T20:16:15.7584519Z   Downloading httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
-2024-06-05T20:16:15.9072792Z Collecting pydantic<3,>=1.9.0 (from openai)
-2024-06-05T20:16:15.9151949Z   Downloading pydantic-2.7.3-py3-none-any.whl.metadata (108 kB)
-2024-06-05T20:16:15.9265709Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.0/109.0 kB 11.8 MB/s eta 0:00:00
-2024-06-05T20:16:15.9506259Z Collecting sniffio (from openai)
-2024-06-05T20:16:15.9576896Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
-2024-06-05T20:16:16.0322714Z Collecting tqdm>4 (from openai)
-2024-06-05T20:16:16.0396886Z   Downloading tqdm-4.66.4-py3-none-any.whl.metadata (57 kB)
-2024-06-05T20:16:16.0443945Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 18.5 MB/s eta 0:00:00
-2024-06-05T20:16:16.0800871Z Collecting typing-extensions<5,>=4.7 (from openai)
-2024-06-05T20:16:16.0875105Z   Downloading typing_extensions-4.12.1-py3-none-any.whl.metadata (3.0 kB)
-2024-06-05T20:16:16.1276130Z Collecting pynacl>=1.4.0 (from PyGithub)
-2024-06-05T20:16:16.1353577Z   Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (8.6 kB)
-2024-06-05T20:16:16.1888481Z Collecting requests>=2.14.0 (from PyGithub)
-2024-06-05T20:16:16.1962156Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
-2024-06-05T20:16:16.2308166Z Collecting pyjwt>=2.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub)
-2024-06-05T20:16:16.2380125Z   Downloading PyJWT-2.8.0-py3-none-any.whl.metadata (4.2 kB)
-2024-06-05T20:16:16.3013835Z Collecting urllib3>=1.26.0 (from PyGithub)
-2024-06-05T20:16:16.3088979Z   Downloading urllib3-2.2.1-py3-none-any.whl.metadata (6.4 kB)
-2024-06-05T20:16:16.3424580Z Collecting Deprecated (from PyGithub)
-2024-06-05T20:16:16.3495145Z   Downloading Deprecated-1.2.14-py2.py3-none-any.whl.metadata (5.4 kB)
-2024-06-05T20:16:16.3931534Z Collecting idna>=2.8 (from anyio<5,>=3.5.0->openai)
-2024-06-05T20:16:16.4003743Z   Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
-2024-06-05T20:16:16.4461632Z Collecting certifi (from httpx<1,>=0.23.0->openai)
-2024-06-05T20:16:16.4532646Z   Downloading certifi-2024.6.2-py3-none-any.whl.metadata (2.2 kB)
-2024-06-05T20:16:16.4911863Z Collecting httpcore==1.* (from httpx<1,>=0.23.0->openai)
-2024-06-05T20:16:16.4983200Z   Downloading httpcore-1.0.5-py3-none-any.whl.metadata (20 kB)
-2024-06-05T20:16:16.5275320Z Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<1,>=0.23.0->openai)
-2024-06-05T20:16:16.5349527Z   Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
-2024-06-05T20:16:16.5671331Z Collecting annotated-types>=0.4.0 (from pydantic<3,>=1.9.0->openai)
-2024-06-05T20:16:16.5741369Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
-2024-06-05T20:16:17.1897037Z Collecting pydantic-core==2.18.4 (from pydantic<3,>=1.9.0->openai)
-2024-06-05T20:16:17.1973634Z   Downloading pydantic_core-2.18.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
-2024-06-05T20:16:17.4537149Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub)
-2024-06-05T20:16:17.4612947Z   Downloading cryptography-42.0.8-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (5.3 kB)
-2024-06-05T20:16:17.5947113Z Collecting cffi>=1.4.1 (from pynacl>=1.4.0->PyGithub)
-2024-06-05T20:16:17.6023714Z   Downloading cffi-1.16.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
-2024-06-05T20:16:17.7321027Z Collecting charset-normalizer<4,>=2 (from requests>=2.14.0->PyGithub)
-2024-06-05T20:16:17.7397804Z   Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
-2024-06-05T20:16:17.8936582Z Collecting wrapt<2,>=1.10 (from Deprecated->PyGithub)
-2024-06-05T20:16:17.9018172Z   Downloading wrapt-1.16.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
-2024-06-05T20:16:17.9385451Z Collecting pycparser (from cffi>=1.4.1->pynacl>=1.4.0->PyGithub)
-2024-06-05T20:16:17.9454767Z   Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
-2024-06-05T20:16:18.0078567Z Downloading openai-1.31.1-py3-none-any.whl (324 kB)
-2024-06-05T20:16:18.0198076Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 324.1/324.1 kB 32.3 MB/s eta 0:00:00
-2024-06-05T20:16:18.0287304Z Downloading PyGithub-2.3.0-py3-none-any.whl (354 kB)
-2024-06-05T20:16:18.0361184Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 354.4/354.4 kB 66.2 MB/s eta 0:00:00
-2024-06-05T20:16:18.0432603Z Downloading anyio-4.4.0-py3-none-any.whl (86 kB)
-2024-06-05T20:16:18.0486473Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.8/86.8 kB 22.7 MB/s eta 0:00:00
-2024-06-05T20:16:18.0563497Z Downloading distro-1.9.0-py3-none-any.whl (20 kB)
-2024-06-05T20:16:18.0663109Z Downloading httpx-0.27.0-py3-none-any.whl (75 kB)
-2024-06-05T20:16:18.0717434Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.6/75.6 kB 18.7 MB/s eta 0:00:00
-2024-06-05T20:16:18.0792602Z Downloading httpcore-1.0.5-py3-none-any.whl (77 kB)
-2024-06-05T20:16:18.0847018Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.9/77.9 kB 19.7 MB/s eta 0:00:00
-2024-06-05T20:16:18.0922270Z Downloading pydantic-2.7.3-py3-none-any.whl (409 kB)
-2024-06-05T20:16:18.0997457Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.6/409.6 kB 71.4 MB/s eta 0:00:00
-2024-06-05T20:16:18.1150988Z Downloading pydantic_core-2.18.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
-2024-06-05T20:16:18.1368983Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 104.5 MB/s eta 0:00:00
-2024-06-05T20:16:18.1452702Z Downloading PyJWT-2.8.0-py3-none-any.whl (22 kB)
-2024-06-05T20:16:18.1562527Z Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)
-2024-06-05T20:16:18.1674215Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 856.7/856.7 kB 90.8 MB/s eta 0:00:00
-2024-06-05T20:16:18.1748804Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
-2024-06-05T20:16:18.1820319Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 10.9 MB/s eta 0:00:00
-2024-06-05T20:16:18.1893876Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
-2024-06-05T20:16:18.1998564Z Downloading tqdm-4.66.4-py3-none-any.whl (78 kB)
-2024-06-05T20:16:18.2065460Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 14.8 MB/s eta 0:00:00
-2024-06-05T20:16:18.2138480Z Downloading typing_extensions-4.12.1-py3-none-any.whl (37 kB)
-2024-06-05T20:16:18.2239933Z Downloading urllib3-2.2.1-py3-none-any.whl (121 kB)
-2024-06-05T20:16:18.2295271Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.1/121.1 kB 34.7 MB/s eta 0:00:00
-2024-06-05T20:16:18.2372423Z Downloading Deprecated-1.2.14-py2.py3-none-any.whl (9.6 kB)
-2024-06-05T20:16:18.2479880Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
-2024-06-05T20:16:18.2584959Z Downloading certifi-2024.6.2-py3-none-any.whl (164 kB)
-2024-06-05T20:16:18.2646579Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.4/164.4 kB 40.6 MB/s eta 0:00:00
-2024-06-05T20:16:18.2744458Z Downloading cffi-1.16.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (477 kB)
-2024-06-05T20:16:18.2826914Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 477.6/477.6 kB 74.9 MB/s eta 0:00:00
-2024-06-05T20:16:18.2900418Z Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (141 kB)
-2024-06-05T20:16:18.2954579Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.9/141.9 kB 38.5 MB/s eta 0:00:00
-2024-06-05T20:16:18.3033840Z Downloading cryptography-42.0.8-cp39-abi3-manylinux_2_28_x86_64.whl (3.9 MB)
-2024-06-05T20:16:18.3444373Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 99.0 MB/s eta 0:00:00
-2024-06-05T20:16:18.3518728Z Downloading idna-3.7-py3-none-any.whl (66 kB)
-2024-06-05T20:16:18.3567896Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 20.2 MB/s eta 0:00:00
-2024-06-05T20:16:18.3640510Z Downloading wrapt-1.16.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (87 kB)
-2024-06-05T20:16:18.3688321Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 28.0 MB/s eta 0:00:00
-2024-06-05T20:16:18.3759092Z Downloading h11-0.14.0-py3-none-any.whl (58 kB)
-2024-06-05T20:16:18.3803169Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 19.6 MB/s eta 0:00:00
-2024-06-05T20:16:18.3874294Z Downloading pycparser-2.22-py3-none-any.whl (117 kB)
-2024-06-05T20:16:18.3930331Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 29.9 MB/s eta 0:00:00
-2024-06-05T20:16:18.5502641Z Installing collected packages: wrapt, urllib3, typing-extensions, tqdm, sniffio, pyjwt, pycparser, idna, h11, distro, charset-normalizer, certifi, annotated-types, requests, pydantic-core, httpcore, Deprecated, cffi, anyio, pynacl, pydantic, httpx, cryptography, openai, PyGithub
-2024-06-05T20:16:20.7073071Z Successfully installed Deprecated-1.2.14 PyGithub-2.3.0 annotated-types-0.7.0 anyio-4.4.0 certifi-2024.6.2 cffi-1.16.0 charset-normalizer-3.3.2 cryptography-42.0.8 distro-1.9.0 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 openai-1.31.1 pycparser-2.22 pydantic-2.7.3 pydantic-core-2.18.4 pyjwt-2.8.0 pynacl-1.5.0 requests-2.32.3 sniffio-1.3.1 tqdm-4.66.4 typing-extensions-4.12.1 urllib3-2.2.1 wrapt-1.16.0
+2024-06-05T20:25:01.1769995Z ##[group]Run pip install openai PyGithub
+2024-06-05T20:25:01.1770738Z [36;1mpip install openai PyGithub[0m
+2024-06-05T20:25:01.1848237Z shell: /usr/bin/bash -e {0}
+2024-06-05T20:25:01.1848751Z env:
+2024-06-05T20:25:01.1849355Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-06-05T20:25:01.1850131Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
+2024-06-05T20:25:01.1850752Z ##[endgroup]
+2024-06-05T20:25:01.9579217Z Collecting openai
+2024-06-05T20:25:02.0289904Z   Downloading openai-1.31.1-py3-none-any.whl.metadata (21 kB)
+2024-06-05T20:25:02.0830083Z Collecting PyGithub
+2024-06-05T20:25:02.0971542Z   Downloading PyGithub-2.3.0-py3-none-any.whl.metadata (3.8 kB)
+2024-06-05T20:25:02.1414948Z Collecting anyio<5,>=3.5.0 (from openai)
+2024-06-05T20:25:02.1556825Z   Downloading anyio-4.4.0-py3-none-any.whl.metadata (4.6 kB)
+2024-06-05T20:25:02.1760691Z Collecting distro<2,>=1.7.0 (from openai)
+2024-06-05T20:25:02.1906965Z   Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+2024-06-05T20:25:02.2316549Z Collecting httpx<1,>=0.23.0 (from openai)
+2024-06-05T20:25:02.2460201Z   Downloading httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
+2024-06-05T20:25:02.3911346Z Collecting pydantic<3,>=1.9.0 (from openai)
+2024-06-05T20:25:02.4052968Z   Downloading pydantic-2.7.3-py3-none-any.whl.metadata (108 kB)
+2024-06-05T20:25:02.4263743Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.0/109.0 kB 5.6 MB/s eta 0:00:00
+2024-06-05T20:25:02.4459471Z Collecting sniffio (from openai)
+2024-06-05T20:25:02.4598903Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2024-06-05T20:25:02.5292709Z Collecting tqdm>4 (from openai)
+2024-06-05T20:25:02.5433918Z   Downloading tqdm-4.66.4-py3-none-any.whl.metadata (57 kB)
+2024-06-05T20:25:02.5482220Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 18.3 MB/s eta 0:00:00
+2024-06-05T20:25:02.5803636Z Collecting typing-extensions<5,>=4.7 (from openai)
+2024-06-05T20:25:02.5943488Z   Downloading typing_extensions-4.12.1-py3-none-any.whl.metadata (3.0 kB)
+2024-06-05T20:25:02.6289097Z Collecting pynacl>=1.4.0 (from PyGithub)
+2024-06-05T20:25:02.6431447Z   Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (8.6 kB)
+2024-06-05T20:25:02.6900540Z Collecting requests>=2.14.0 (from PyGithub)
+2024-06-05T20:25:02.7039911Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+2024-06-05T20:25:02.7327901Z Collecting pyjwt>=2.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub)
+2024-06-05T20:25:02.7466238Z   Downloading PyJWT-2.8.0-py3-none-any.whl.metadata (4.2 kB)
+2024-06-05T20:25:02.8045548Z Collecting urllib3>=1.26.0 (from PyGithub)
+2024-06-05T20:25:02.8189531Z   Downloading urllib3-2.2.1-py3-none-any.whl.metadata (6.4 kB)
+2024-06-05T20:25:02.8454638Z Collecting Deprecated (from PyGithub)
+2024-06-05T20:25:02.8594078Z   Downloading Deprecated-1.2.14-py2.py3-none-any.whl.metadata (5.4 kB)
+2024-06-05T20:25:02.8976761Z Collecting idna>=2.8 (from anyio<5,>=3.5.0->openai)
+2024-06-05T20:25:02.9115641Z   Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+2024-06-05T20:25:02.9508121Z Collecting certifi (from httpx<1,>=0.23.0->openai)
+2024-06-05T20:25:02.9645259Z   Downloading certifi-2024.6.2-py3-none-any.whl.metadata (2.2 kB)
+2024-06-05T20:25:02.9990475Z Collecting httpcore==1.* (from httpx<1,>=0.23.0->openai)
+2024-06-05T20:25:03.0131332Z   Downloading httpcore-1.0.5-py3-none-any.whl.metadata (20 kB)
+2024-06-05T20:25:03.0388544Z Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<1,>=0.23.0->openai)
+2024-06-05T20:25:03.0525898Z   Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+2024-06-05T20:25:03.0764704Z Collecting annotated-types>=0.4.0 (from pydantic<3,>=1.9.0->openai)
+2024-06-05T20:25:03.0903529Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2024-06-05T20:25:03.7091393Z Collecting pydantic-core==2.18.4 (from pydantic<3,>=1.9.0->openai)
+2024-06-05T20:25:03.7233594Z   Downloading pydantic_core-2.18.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+2024-06-05T20:25:03.9791621Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub)
+2024-06-05T20:25:03.9930730Z   Downloading cryptography-42.0.8-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+2024-06-05T20:25:04.1205602Z Collecting cffi>=1.4.1 (from pynacl>=1.4.0->PyGithub)
+2024-06-05T20:25:04.1346022Z   Downloading cffi-1.16.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+2024-06-05T20:25:04.2592668Z Collecting charset-normalizer<4,>=2 (from requests>=2.14.0->PyGithub)
+2024-06-05T20:25:04.2736052Z   Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
+2024-06-05T20:25:04.4180292Z Collecting wrapt<2,>=1.10 (from Deprecated->PyGithub)
+2024-06-05T20:25:04.4323865Z   Downloading wrapt-1.16.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+2024-06-05T20:25:04.4675583Z Collecting pycparser (from cffi>=1.4.1->pynacl>=1.4.0->PyGithub)
+2024-06-05T20:25:04.4816240Z   Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+2024-06-05T20:25:04.5467798Z Downloading openai-1.31.1-py3-none-any.whl (324 kB)
+2024-06-05T20:25:04.5675324Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 324.1/324.1 kB 17.0 MB/s eta 0:00:00
+2024-06-05T20:25:04.5815818Z Downloading PyGithub-2.3.0-py3-none-any.whl (354 kB)
+2024-06-05T20:25:04.5892471Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 354.4/354.4 kB 63.1 MB/s eta 0:00:00
+2024-06-05T20:25:04.6032131Z Downloading anyio-4.4.0-py3-none-any.whl (86 kB)
+2024-06-05T20:25:04.6079910Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.8/86.8 kB 28.4 MB/s eta 0:00:00
+2024-06-05T20:25:04.6216754Z Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+2024-06-05T20:25:04.6378806Z Downloading httpx-0.27.0-py3-none-any.whl (75 kB)
+2024-06-05T20:25:04.6427903Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.6/75.6 kB 23.1 MB/s eta 0:00:00
+2024-06-05T20:25:04.6567106Z Downloading httpcore-1.0.5-py3-none-any.whl (77 kB)
+2024-06-05T20:25:04.6613183Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.9/77.9 kB 26.1 MB/s eta 0:00:00
+2024-06-05T20:25:04.6756552Z Downloading pydantic-2.7.3-py3-none-any.whl (409 kB)
+2024-06-05T20:25:04.6834716Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.6/409.6 kB 71.7 MB/s eta 0:00:00
+2024-06-05T20:25:04.6976237Z Downloading pydantic_core-2.18.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2024-06-05T20:25:04.7268876Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 76.9 MB/s eta 0:00:00
+2024-06-05T20:25:04.7409288Z Downloading PyJWT-2.8.0-py3-none-any.whl (22 kB)
+2024-06-05T20:25:04.7572897Z Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)
+2024-06-05T20:25:04.7688551Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 856.7/856.7 kB 91.0 MB/s eta 0:00:00
+2024-06-05T20:25:04.7827801Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2024-06-05T20:25:04.7874324Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 22.7 MB/s eta 0:00:00
+2024-06-05T20:25:04.8011710Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2024-06-05T20:25:04.8174484Z Downloading tqdm-4.66.4-py3-none-any.whl (78 kB)
+2024-06-05T20:25:04.8221321Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 27.5 MB/s eta 0:00:00
+2024-06-05T20:25:04.8364302Z Downloading typing_extensions-4.12.1-py3-none-any.whl (37 kB)
+2024-06-05T20:25:04.8530508Z Downloading urllib3-2.2.1-py3-none-any.whl (121 kB)
+2024-06-05T20:25:04.8582011Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.1/121.1 kB 37.6 MB/s eta 0:00:00
+2024-06-05T20:25:04.8720716Z Downloading Deprecated-1.2.14-py2.py3-none-any.whl (9.6 kB)
+2024-06-05T20:25:04.8880098Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2024-06-05T20:25:04.9040707Z Downloading certifi-2024.6.2-py3-none-any.whl (164 kB)
+2024-06-05T20:25:04.9098549Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.4/164.4 kB 45.6 MB/s eta 0:00:00
+2024-06-05T20:25:04.9240471Z Downloading cffi-1.16.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (477 kB)
+2024-06-05T20:25:04.9316919Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 477.6/477.6 kB 83.8 MB/s eta 0:00:00
+2024-06-05T20:25:04.9456925Z Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (141 kB)
+2024-06-05T20:25:04.9508562Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.9/141.9 kB 44.0 MB/s eta 0:00:00
+2024-06-05T20:25:04.9645987Z Downloading cryptography-42.0.8-cp39-abi3-manylinux_2_28_x86_64.whl (3.9 MB)
+2024-06-05T20:25:05.0006578Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 113.5 MB/s eta 0:00:00
+2024-06-05T20:25:05.0146505Z Downloading idna-3.7-py3-none-any.whl (66 kB)
+2024-06-05T20:25:05.0194671Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 21.4 MB/s eta 0:00:00
+2024-06-05T20:25:05.0335478Z Downloading wrapt-1.16.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (87 kB)
+2024-06-05T20:25:05.0386950Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 26.1 MB/s eta 0:00:00
+2024-06-05T20:25:05.0526581Z Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+2024-06-05T20:25:05.0575668Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 18.0 MB/s eta 0:00:00
+2024-06-05T20:25:05.0716565Z Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+2024-06-05T20:25:05.0768053Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 35.4 MB/s eta 0:00:00
+2024-06-05T20:25:05.2335115Z Installing collected packages: wrapt, urllib3, typing-extensions, tqdm, sniffio, pyjwt, pycparser, idna, h11, distro, charset-normalizer, certifi, annotated-types, requests, pydantic-core, httpcore, Deprecated, cffi, anyio, pynacl, pydantic, httpx, cryptography, openai, PyGithub
+2024-06-05T20:25:07.3674339Z Successfully installed Deprecated-1.2.14 PyGithub-2.3.0 annotated-types-0.7.0 anyio-4.4.0 certifi-2024.6.2 cffi-1.16.0 charset-normalizer-3.3.2 cryptography-42.0.8 distro-1.9.0 h11-0.14.0 httpcore-1.0.5 httpx-0.27.0 idna-3.7 openai-1.31.1 pycparser-2.22 pydantic-2.7.3 pydantic-core-2.18.4 pyjwt-2.8.0 pynacl-1.5.0 requests-2.32.3 sniffio-1.3.1 tqdm-4.66.4 typing-extensions-4.12.1 urllib3-2.2.1 wrapt-1.16.0

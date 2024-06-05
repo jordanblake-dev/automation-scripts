@@ -1,78 +1,103 @@
-2024-06-05T20:16:09.5637154Z ##[group]Run actions/checkout@v2
-2024-06-05T20:16:09.5637900Z with:
-2024-06-05T20:16:09.5638405Z   repository: jordanblake-dev/automation-scripts
-2024-06-05T20:16:09.5639296Z   token: ***
-2024-06-05T20:16:09.5639714Z   ssh-strict: true
-2024-06-05T20:16:09.5640172Z   persist-credentials: true
-2024-06-05T20:16:09.5640725Z   clean: true
-2024-06-05T20:16:09.5641133Z   fetch-depth: 1
-2024-06-05T20:16:09.5641551Z   lfs: false
-2024-06-05T20:16:09.5642543Z   submodules: false
-2024-06-05T20:16:09.5643024Z   set-safe-directory: true
-2024-06-05T20:16:09.5643582Z ##[endgroup]
-2024-06-05T20:16:11.4941366Z Syncing repository: jordanblake-dev/automation-scripts
-2024-06-05T20:16:11.4999698Z ##[group]Getting Git version info
-2024-06-05T20:16:11.5001297Z Working directory is '/home/runner/work/automation-scripts/automation-scripts'
-2024-06-05T20:16:11.5033908Z [command]/usr/bin/git version
-2024-06-05T20:16:11.5226803Z git version 2.45.1
-2024-06-05T20:16:11.5251258Z ##[endgroup]
-2024-06-05T20:16:11.5272397Z Temporarily overriding HOME='/home/runner/work/_temp/9732b7f6-4103-435e-a228-880de53e0c24' before making global git config changes
-2024-06-05T20:16:11.5274732Z Adding repository directory to the temporary git global config as a safe directory
-2024-06-05T20:16:11.5277022Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/automation-scripts/automation-scripts
-2024-06-05T20:16:11.5322723Z Deleting the contents of '/home/runner/work/automation-scripts/automation-scripts'
-2024-06-05T20:16:11.5327633Z ##[group]Initializing the repository
-2024-06-05T20:16:11.5332165Z [command]/usr/bin/git init /home/runner/work/automation-scripts/automation-scripts
-2024-06-05T20:16:11.5420753Z hint: Using 'master' as the name for the initial branch. This default branch name
-2024-06-05T20:16:11.5421698Z hint: is subject to change. To configure the initial branch name to use in all
-2024-06-05T20:16:11.5422624Z hint: of your new repositories, which will suppress this warning, call:
-2024-06-05T20:16:11.5423202Z hint:
-2024-06-05T20:16:11.5423784Z hint: 	git config --global init.defaultBranch <name>
-2024-06-05T20:16:11.5424305Z hint:
-2024-06-05T20:16:11.5424848Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-2024-06-05T20:16:11.5425707Z hint: 'development'. The just-created branch can be renamed via this command:
-2024-06-05T20:16:11.5426288Z hint:
-2024-06-05T20:16:11.5426683Z hint: 	git branch -m <name>
-2024-06-05T20:16:11.5431521Z Initialized empty Git repository in /home/runner/work/automation-scripts/automation-scripts/.git/
-2024-06-05T20:16:11.5439468Z [command]/usr/bin/git remote add origin https://github.com/jordanblake-dev/automation-scripts
-2024-06-05T20:16:11.5485455Z ##[endgroup]
-2024-06-05T20:16:11.5486322Z ##[group]Disabling automatic garbage collection
-2024-06-05T20:16:11.5489528Z [command]/usr/bin/git config --local gc.auto 0
-2024-06-05T20:16:11.5527071Z ##[endgroup]
-2024-06-05T20:16:11.5528168Z ##[group]Setting up auth
-2024-06-05T20:16:11.5533689Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-2024-06-05T20:16:11.5571857Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-2024-06-05T20:16:11.5912060Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2024-06-05T20:16:11.5949465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-2024-06-05T20:16:11.6195484Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-2024-06-05T20:16:11.6240145Z ##[endgroup]
-2024-06-05T20:16:11.6241338Z ##[group]Fetching the repository
-2024-06-05T20:16:11.6250576Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +baf7b2ce157d95afc4b34c39f17233104ae29978:refs/remotes/origin/main
-2024-06-05T20:16:11.8089735Z remote: Enumerating objects: 7, done.        
-2024-06-05T20:16:11.8092385Z remote: Counting objects:  14% (1/7)        
-2024-06-05T20:16:11.8093286Z remote: Counting objects:  28% (2/7)        
-2024-06-05T20:16:11.8094267Z remote: Counting objects:  42% (3/7)        
-2024-06-05T20:16:11.8095092Z remote: Counting objects:  57% (4/7)        
-2024-06-05T20:16:11.8095894Z remote: Counting objects:  71% (5/7)        
-2024-06-05T20:16:11.8096898Z remote: Counting objects:  85% (6/7)        
-2024-06-05T20:16:11.8097652Z remote: Counting objects: 100% (7/7)        
-2024-06-05T20:16:11.8098418Z remote: Counting objects: 100% (7/7), done.        
-2024-06-05T20:16:11.8099094Z remote: Compressing objects:  16% (1/6)        
-2024-06-05T20:16:11.8099657Z remote: Compressing objects:  33% (2/6)        
-2024-06-05T20:16:11.8100510Z remote: Compressing objects:  50% (3/6)        
-2024-06-05T20:16:11.8101114Z remote: Compressing objects:  66% (4/6)        
-2024-06-05T20:16:11.8101808Z remote: Compressing objects:  83% (5/6)        
-2024-06-05T20:16:11.8102503Z remote: Compressing objects: 100% (6/6)        
-2024-06-05T20:16:11.8103144Z remote: Compressing objects: 100% (6/6), done.        
-2024-06-05T20:16:11.8104335Z remote: Total 7 (delta 0), reused 4 (delta 0), pack-reused 0        
-2024-06-05T20:16:11.8172369Z From https://github.com/jordanblake-dev/automation-scripts
-2024-06-05T20:16:11.8173376Z  * [new ref]         baf7b2ce157d95afc4b34c39f17233104ae29978 -> origin/main
-2024-06-05T20:16:11.8206164Z ##[endgroup]
-2024-06-05T20:16:11.8206856Z ##[group]Determining the checkout info
-2024-06-05T20:16:11.8208493Z ##[endgroup]
-2024-06-05T20:16:11.8209236Z ##[group]Checking out the ref
-2024-06-05T20:16:11.8213279Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
-2024-06-05T20:16:11.8265772Z Switched to a new branch 'main'
-2024-06-05T20:16:11.8269596Z branch 'main' set up to track 'origin/main'.
-2024-06-05T20:16:11.8274224Z ##[endgroup]
-2024-06-05T20:16:11.8325575Z [command]/usr/bin/git log -1 --format='%H'
-2024-06-05T20:16:11.8359663Z 'baf7b2ce157d95afc4b34c39f17233104ae29978'
+2024-06-05T20:25:00.3335831Z ##[group]Run actions/checkout@v2
+2024-06-05T20:25:00.3336516Z with:
+2024-06-05T20:25:00.3337157Z   repository: jordanblake-dev/automation-scripts
+2024-06-05T20:25:00.3338037Z   token: ***
+2024-06-05T20:25:00.3338510Z   ssh-strict: true
+2024-06-05T20:25:00.3339063Z   persist-credentials: true
+2024-06-05T20:25:00.3339609Z   clean: true
+2024-06-05T20:25:00.3340107Z   fetch-depth: 1
+2024-06-05T20:25:00.3340568Z   lfs: false
+2024-06-05T20:25:00.3341005Z   submodules: false
+2024-06-05T20:25:00.3341551Z   set-safe-directory: true
+2024-06-05T20:25:00.3342065Z ##[endgroup]
+2024-06-05T20:25:00.5763658Z Syncing repository: jordanblake-dev/automation-scripts
+2024-06-05T20:25:00.5766427Z ##[group]Getting Git version info
+2024-06-05T20:25:00.5767601Z Working directory is '/home/runner/work/automation-scripts/automation-scripts'
+2024-06-05T20:25:00.5769131Z [command]/usr/bin/git version
+2024-06-05T20:25:00.5770603Z git version 2.45.1
+2024-06-05T20:25:00.5795167Z ##[endgroup]
+2024-06-05T20:25:00.5810898Z Temporarily overriding HOME='/home/runner/work/_temp/537e12dd-6e38-491e-885a-a6b4d7c52345' before making global git config changes
+2024-06-05T20:25:00.5812785Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-05T20:25:00.5816129Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/automation-scripts/automation-scripts
+2024-06-05T20:25:00.5864294Z Deleting the contents of '/home/runner/work/automation-scripts/automation-scripts'
+2024-06-05T20:25:00.5869469Z ##[group]Initializing the repository
+2024-06-05T20:25:00.5873173Z [command]/usr/bin/git init /home/runner/work/automation-scripts/automation-scripts
+2024-06-05T20:25:00.5946862Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-06-05T20:25:00.5949566Z hint: is subject to change. To configure the initial branch name to use in all
+2024-06-05T20:25:00.5951565Z hint: of your new repositories, which will suppress this warning, call:
+2024-06-05T20:25:00.5953063Z hint:
+2024-06-05T20:25:00.5954396Z hint: 	git config --global init.defaultBranch <name>
+2024-06-05T20:25:00.5955838Z hint:
+2024-06-05T20:25:00.5957344Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-06-05T20:25:00.5959474Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-06-05T20:25:00.5961023Z hint:
+2024-06-05T20:25:00.5962089Z hint: 	git branch -m <name>
+2024-06-05T20:25:00.5964359Z Initialized empty Git repository in /home/runner/work/automation-scripts/automation-scripts/.git/
+2024-06-05T20:25:00.5966973Z [command]/usr/bin/git remote add origin https://github.com/jordanblake-dev/automation-scripts
+2024-06-05T20:25:00.6007128Z ##[endgroup]
+2024-06-05T20:25:00.6008820Z ##[group]Disabling automatic garbage collection
+2024-06-05T20:25:00.6012535Z [command]/usr/bin/git config --local gc.auto 0
+2024-06-05T20:25:00.6051201Z ##[endgroup]
+2024-06-05T20:25:00.6052987Z ##[group]Setting up auth
+2024-06-05T20:25:00.6060469Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-05T20:25:00.6101534Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-05T20:25:00.6427943Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-05T20:25:00.6468692Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-05T20:25:00.6735729Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-06-05T20:25:00.6785227Z ##[endgroup]
+2024-06-05T20:25:00.6786658Z ##[group]Fetching the repository
+2024-06-05T20:25:00.6795895Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +1f450eed2c4b0c965eebdcd9aed7e45e6895074f:refs/remotes/origin/main
+2024-06-05T20:25:00.9509794Z remote: Enumerating objects: 21, done.        
+2024-06-05T20:25:00.9513730Z remote: Counting objects:   4% (1/21)        
+2024-06-05T20:25:00.9515754Z remote: Counting objects:   9% (2/21)        
+2024-06-05T20:25:00.9516970Z remote: Counting objects:  14% (3/21)        
+2024-06-05T20:25:00.9517837Z remote: Counting objects:  19% (4/21)        
+2024-06-05T20:25:00.9518679Z remote: Counting objects:  23% (5/21)        
+2024-06-05T20:25:00.9519732Z remote: Counting objects:  28% (6/21)        
+2024-06-05T20:25:00.9520432Z remote: Counting objects:  33% (7/21)        
+2024-06-05T20:25:00.9521189Z remote: Counting objects:  38% (8/21)        
+2024-06-05T20:25:00.9521833Z remote: Counting objects:  42% (9/21)        
+2024-06-05T20:25:00.9522508Z remote: Counting objects:  47% (10/21)        
+2024-06-05T20:25:00.9523273Z remote: Counting objects:  52% (11/21)        
+2024-06-05T20:25:00.9523957Z remote: Counting objects:  57% (12/21)        
+2024-06-05T20:25:00.9524663Z remote: Counting objects:  61% (13/21)        
+2024-06-05T20:25:00.9525414Z remote: Counting objects:  66% (14/21)        
+2024-06-05T20:25:00.9526110Z remote: Counting objects:  71% (15/21)        
+2024-06-05T20:25:00.9526792Z remote: Counting objects:  76% (16/21)        
+2024-06-05T20:25:00.9527524Z remote: Counting objects:  80% (17/21)        
+2024-06-05T20:25:00.9528218Z remote: Counting objects:  85% (18/21)        
+2024-06-05T20:25:00.9528951Z remote: Counting objects:  90% (19/21)        
+2024-06-05T20:25:00.9529610Z remote: Counting objects:  95% (20/21)        
+2024-06-05T20:25:00.9530276Z remote: Counting objects: 100% (21/21)        
+2024-06-05T20:25:00.9531037Z remote: Counting objects: 100% (21/21), done.        
+2024-06-05T20:25:00.9531800Z remote: Compressing objects:   5% (1/17)        
+2024-06-05T20:25:00.9532516Z remote: Compressing objects:  11% (2/17)        
+2024-06-05T20:25:00.9533301Z remote: Compressing objects:  17% (3/17)        
+2024-06-05T20:25:00.9534042Z remote: Compressing objects:  23% (4/17)        
+2024-06-05T20:25:00.9534708Z remote: Compressing objects:  29% (5/17)        
+2024-06-05T20:25:00.9535469Z remote: Compressing objects:  35% (6/17)        
+2024-06-05T20:25:00.9536182Z remote: Compressing objects:  41% (7/17)        
+2024-06-05T20:25:00.9537293Z remote: Compressing objects:  47% (8/17)        
+2024-06-05T20:25:00.9538553Z remote: Compressing objects:  52% (9/17)        
+2024-06-05T20:25:00.9539291Z remote: Compressing objects:  58% (10/17)        
+2024-06-05T20:25:00.9540276Z remote: Compressing objects:  64% (11/17)        
+2024-06-05T20:25:00.9541008Z remote: Compressing objects:  70% (12/17)        
+2024-06-05T20:25:00.9541704Z remote: Compressing objects:  76% (13/17)        
+2024-06-05T20:25:00.9542513Z remote: Compressing objects:  82% (14/17)        
+2024-06-05T20:25:00.9543207Z remote: Compressing objects:  88% (15/17)        
+2024-06-05T20:25:00.9543984Z remote: Compressing objects:  94% (16/17)        
+2024-06-05T20:25:00.9544694Z remote: Compressing objects: 100% (17/17)        
+2024-06-05T20:25:00.9545440Z remote: Compressing objects: 100% (17/17), done.        
+2024-06-05T20:25:00.9711945Z remote: Total 21 (delta 3), reused 19 (delta 3), pack-reused 0        
+2024-06-05T20:25:00.9780000Z From https://github.com/jordanblake-dev/automation-scripts
+2024-06-05T20:25:00.9781821Z  * [new ref]         1f450eed2c4b0c965eebdcd9aed7e45e6895074f -> origin/main
+2024-06-05T20:25:00.9805848Z ##[endgroup]
+2024-06-05T20:25:00.9807469Z ##[group]Determining the checkout info
+2024-06-05T20:25:00.9809248Z ##[endgroup]
+2024-06-05T20:25:00.9810620Z ##[group]Checking out the ref
+2024-06-05T20:25:00.9815062Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-06-05T20:25:00.9883552Z Switched to a new branch 'main'
+2024-06-05T20:25:00.9887124Z branch 'main' set up to track 'origin/main'.
+2024-06-05T20:25:00.9892442Z ##[endgroup]
+2024-06-05T20:25:00.9945666Z [command]/usr/bin/git log -1 --format='%H'
+2024-06-05T20:25:00.9982045Z '1f450eed2c4b0c965eebdcd9aed7e45e6895074f'
