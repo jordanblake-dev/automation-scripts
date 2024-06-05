@@ -41,15 +41,14 @@ file_name = "generated_code.py"
 
 # Function to generate code using GPT-4
 def generate_code(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-004",
-        prompt=prompt,
-        max_tokens=150,
-        n=1,
-        stop=None,
-        temperature=0.7,
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
     )
-    return response.choices[0].text.strip()
+    return response.choices[0].message['content'].strip()
 
 # Generate code
 code_prompt = "Write a Python function to calculate the Fibonacci sequence."
